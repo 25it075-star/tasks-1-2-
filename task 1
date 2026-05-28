@@ -1,0 +1,29 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+// Move the class with the main method to the TOP
+public class GradeTracker {
+    public static void main(String[] args) {
+        ArrayList<Student> studentList = new ArrayList<>();
+        Scanner scanner = new Scanner(System.in);
+        // ... (rest of the main code)
+    }
+    
+    private static void displaySummaryReport(ArrayList<Student> students) {
+        // ... (rest of the report code)
+    }
+}
+
+// Move the helper class to the BOTTOM
+class Student {
+    private String name;
+    private double grade;
+
+    public Student(String name, double grade) {
+        this.name = name;
+        this.grade = grade;
+    }
+
+    public String getName() { return name; }
+    public double getGrade() { return grade; }
+}
